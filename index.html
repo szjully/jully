@@ -1,87 +1,72 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floricultura Bela Flor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Logo da Floricultura Bela Flor" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#about">Sobre Nós</a></li>
+        <li><a href="#products">Flores</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
+  <section id="home" class="hero">
+    <h1>Floricultura Bela Flor</h1>
+    <p>As flores mais lindas para todas as ocasiões!</p>
+    <button onclick="scrollToSection('products')">Ver Produtos</button>
+  </section>
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #8E44AD;
-}
+  <section id="about">
+    <h2>Sobre Nós</h2>
+    <p>Somos apaixonados por flores e trazemos o melhor da natureza para você. Nosso compromisso é fornecer flores frescas e de alta qualidade para todas as ocasiões.</p>
+  </section>
 
-.logo {
-  height: 50px;
-}
+  <section id="products">
+    <h2>Nossas Flores</h2>
+    <div class="product-grid">
+      <div class="product-item">
+        <img src="https://img.elo7.com.br/product/685x685/25364C9/10-rosas-vermelhas-flor-artificial-toque-real-50-cm-veludo-arranjo.jpg" alt="Rosas">
+        <h3>Rosas</h3>
+        <p>A partir de R$10,00</p>
+      </div>
+      <div class="product-item">
+        <img src="images/lirio.jpg" alt="Lírios">
+        <h3>Lírios</h3>
+        <p>A partir de R$15,00</p>
+      </div>
+      <!-- Adicione mais produtos conforme necessário -->
+    </div>
+  </section>
 
-nav ul {
-  list-style: none;
-  display: flex;
-}
+  <section id="contact">
+    <h2>Contato</h2>
+    <form>
+      <label for="name">Nome</label>
+      <input type="text" id="name" required>
 
-nav ul li {
-  margin-left: 20px;
-}
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
+      <label for="message">Mensagem</label>
+      <textarea id="message" required></textarea>
 
-.hero {
-  background-image: url('images/flores-banner.jpg');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-}
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
-.hero h1 {
-  font-size: 2.5em;
-}
+  <footer>
+    <p>&copy; 2024 Floricultura Bela Flor. Todos os direitos reservados.</p>
+  </footer>
 
-.hero p {
-  margin-top: 10px;
-}
-
-button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #3498DB;
-  color: white;
-  cursor: pointer;
-}
-
-section {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
-}
-
-#products .product-grid {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.product-item {
-  border: 1px solid #ddd;
-  padding: 10px;
-  width: calc(50% - 20px);
-  text-align: center;
-}
-
-footer {
-  text-align: center;
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-}
+  <script src="script.js"></script>
+</body>
+</html>
