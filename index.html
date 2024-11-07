@@ -1,11 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>class</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floricultura Bela Flor</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
- replay   
+  <header>
+    <img src="images/logo.png" alt="Logo da Floricultura Bela Flor" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#about">Sobre Nós</a></li>
+        <li><a href="#products">Flores</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Floricultura Bela Flor</h1>
+    <p>As flores mais lindas para todas as ocasiões!</p>
+    <button onclick="scrollToSection('products')">Ver Produtos</button>
+  </section>
+
+  <section id="about">
+    <h2>Sobre Nós</h2>
+    <p>Somos apaixonados por flores e trazemos o melhor da natureza para você. Nosso compromisso é fornecer flores frescas e de alta qualidade para todas as ocasiões.</p>
+  </section>
+
+  <section id="products">
+    <h2>Nossas Flores</h2>
+    <div class="product-grid">
+      <div class="product-item">
+        <img src="images/rosa.jpg" alt="Rosas">
+        <h3>Rosas</h3>
+        <p>A partir de R$10,00</p>
+      </div>
+      <div class="product-item">
+        <img src="images/lirio.jpg" alt="Lírios">
+        <h3>Lírios</h3>
+        <p>A partir de R$15,00</p>
+      </div>
+      <!-- Adicione mais produtos aqui -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contato</h2>
+    <form>
+      <label for="name">Nome</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Mensagem</label>
+      <textarea id="message" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Floricultura Bela Flor. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
